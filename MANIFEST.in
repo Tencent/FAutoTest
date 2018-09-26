@@ -1,0 +1,1 @@
+recursive-include fastAutoTest/core/wx/apk *.apk
