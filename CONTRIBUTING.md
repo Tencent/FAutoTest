@@ -1,7 +1,7 @@
 # Contributing
 欢迎任意形式的贡献。
 
-### Acknowledgements
+##Acknowledgements
 
 FAutoTest持续招聘贡献者，即使是在Issues中回答问题或者在群里帮忙解答问题，或者做一些简单的bugfix，也会给FAutoTest带来很大的帮助。
 
@@ -48,3 +48,10 @@ FAutoTest团队会查看所有的PR，我们会运行一些代码检查和测试
 
 ## 许可证
 通过为FAutoTest做出贡献，代表您同意将其版权归为FAutoTest所有，FAutoTest的开源协议为 [BSD-3-Clause License](LICENSE.txt) 
+
+## 贡献代码
+
+如果你在使用过程中发现 Bug，请通过 Issues 或 Pull Requests 来提交反馈，或者加入交流群来解决。  
+首次参与贡献请阅读：[CONTRIBUTING](CONTRIBUTING.md)
+
+[腾讯开源激励计划](https://opensource.tencent.com/contribution) 鼓励开发者的参与和贡献，期待你的加入。
