@@ -187,7 +187,7 @@ if __name__ == '__main__':
 
 ## 相关链接
 
-[CONTRIBUTING](docs/CONTRIBUTING.md)
+[CONTRIBUTING](CONTRIBUTING.md)
 
 [IFRAME](docs/IFRAME.md)
 
@@ -202,10 +202,10 @@ if __name__ == '__main__':
 ## 贡献代码
 
 如果你在使用过程中发现 Bug，请通过 Issues 或 Pull Requests 来提交反馈，或者加入交流群来解决。  
-首次参与贡献请阅读：[CONTRIBUTING](docs/CONTRIBUTING.md)
+首次参与贡献请阅读：[CONTRIBUTING](CONTRIBUTING.md)
 
 [腾讯开源激励计划](https://opensource.tencent.com/contribution) 鼓励开发者的参与和贡献，期待你的加入。
 
 ## License
 
-所有代码采用 [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause) 开源
+所有代码采用 [BSD-3-Clause License](LICENSE.txt) 开源

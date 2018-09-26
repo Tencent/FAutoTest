@@ -47,4 +47,4 @@ FAutoTest团队会查看所有的PR，我们会运行一些代码检查和测试
 6. 现在，您可以开始在`dev`分支上PR了。
 
 ## 许可证
-通过为FAutoTest做出贡献，代表您同意将其版权归为FAutoTest所有，FAutoTest的开源协议为 [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause) 
+通过为FAutoTest做出贡献，代表您同意将其版权归为FAutoTest所有，FAutoTest的开源协议为 [BSD-3-Clause License](LICENSE.txt) 
