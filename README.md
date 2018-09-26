@@ -198,6 +198,8 @@ if __name__ == '__main__':
 
 [QA](docs/QA.md)
 
+[白皮书](<http://km.oa.com/group/2714/articles/show/328058>)
+
 ## 贡献代码
 
 如果你在使用过程中发现 Bug，请通过 Issues 或 Pull Requests 来提交反馈，或者加入交流群来解决。  
@@ -207,4 +209,4 @@ if __name__ == '__main__':
 
 ## License
 
-所有代码采用 [MIT License](http://opensource.org/licenses/MIT) 开源
+所有代码采用 [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause) 开源
