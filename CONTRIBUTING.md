@@ -1,7 +1,7 @@
 # Contributing
 欢迎任意形式的贡献。
 
-##Acknowledgements
+## Acknowledgements
 
 FAutoTest持续招聘贡献者，即使是在Issues中回答问题或者在群里帮忙解答问题，或者做一些简单的bugfix，也会给FAutoTest带来很大的帮助。
 
