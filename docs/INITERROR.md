@@ -2,7 +2,11 @@
 
 1. 先尝试执行adb shell am force-stop com.tencent.mm命令杀掉微信进程,然后进入待测页面重试。
 
-2. 如果仍然失败。H5页面进入http://localhost:9222/json，小程序页面进入http://localhost:9223/json。查看是否成功建立连接。
+2. 如果仍然失败。H5页面进入http://localhost:9222/json
+
+   小程序页面进入http://localhost:9223/json
+
+   查看是否成功建立连接。
 
    - 成功建立连接应该见到类似如图的信息：
 
