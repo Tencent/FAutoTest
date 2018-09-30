@@ -9,7 +9,7 @@
 3. 小程序框架初始化一直报错 
 
 > * 有可能在开启小程序之前开启过别的小程序。需要使用adb shell am force-stop com.tencent.mm命令杀掉微信进程 
-> * 详情见[调试指引]([*https://github.com/Tencent/FAutoTest/blob/master/docs/INITERROR.md*](https://github.com/Tencent/FAutoTest/blob/master/docs/INITERROR.md) )
+> * 详情见[调试指引](https://github.com/Tencent/FAutoTest/blob/master/docs/INITERROR.md)
 
 4. 封装的UIAutomator无法正常使用，一直报告prc错误
 
