@@ -34,8 +34,11 @@ from fastAutoTest.utils.logger import Log
 
 import sys
 
-reload(sys)
-sys.setdefaultencoding('utf8')
+try:
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+except NameError:
+    pass
 
 __all__ = [
     "H5Driver"

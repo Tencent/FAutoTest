@@ -54,7 +54,10 @@ class H5PageOperator(object):
         commandList.append(keydownCommand)
 
         # textEvent的command,需要将字符串分割成每四个字符为一小段
-        unicodeText = unicode(text, 'utf-8')
+        try:
+            unicodeText = unicode(text, 'utf-8')
+        except NameError:
+            unicodeText = str(text)
         length = len(unicodeText)
         i = length / 4 if length % 4 == 0 else length / 4 + 1
         for j in range(i):

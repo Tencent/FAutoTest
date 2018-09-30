@@ -7,6 +7,7 @@ https://opensource.org/licenses/BSD-3-Clause
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 '''
+from __future__ import print_function
 import json
 import threading
 import time
@@ -105,7 +106,7 @@ class ShortLiveWebSocket(DataTransferCallback):
 
             except WebSocketConnectionClosedException:
                 if self.isQuit():
-                    print 'already quit'
+                    print('already quit')
                 else:
                     pass
             except Exception:

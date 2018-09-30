@@ -7,6 +7,7 @@ https://opensource.org/licenses/BSD-3-Clause
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 '''
+from __future__ import print_function
 import subprocess
 
 from fastAutoTest.core.common.errormsgmanager import *
@@ -32,5 +33,5 @@ def runCommand(cmd, printDetails=False, cwd=None):
 if __name__ == "__main__":
     cmd = "adb forward tcp:%s localabstract:webview_devtools_remote_%s" % (9222, 123)
     out, error = runCommand(cmd)
-    print(error == "")
-    print out
+    print((error == ""))
+    print(out)

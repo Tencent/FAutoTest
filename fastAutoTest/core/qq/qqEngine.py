@@ -28,8 +28,12 @@ from fastAutoTest.utils.singlethreadexecutor import SingleThreadExecutor
 from fastAutoTest.utils.vmhook import VMShutDownHandler, UncaughtExceptionHandler
 from qqWebSocketDebugUrlFetcher import QQWebSocketDebugUrlFetcher
 
-reload(sys)
-sys.setdefaultencoding('utf8')
+try:
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+except NameError:
+    pass
+
 __all__ = {
     "QQDriver"
 }

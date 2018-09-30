@@ -7,6 +7,7 @@ https://opensource.org/licenses/BSD-3-Clause
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 '''
+from __future__ import print_function
 
 import json
 import urllib2
@@ -267,7 +268,7 @@ class WxWebSocketDebugUrlFetcher(object):
             url = ''
             for url in serviceUrlList:
                 webSocketUrl = responseWesocketUrlDict.get(url)
-                print webSocketUrl
+                print(webSocketUrl)
                 webSocketConn = create_connection(url=webSocketUrl)
                 webSocketConn.send(
                     '{"id": 1,"method": "Runtime.evaluate","params": {"expression": "srcs = document.body.childNodes[0].getAttribute(\'src\')"}}'

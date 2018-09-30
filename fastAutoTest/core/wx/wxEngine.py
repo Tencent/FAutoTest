@@ -29,8 +29,12 @@ from fastAutoTest.utils.logger import Log
 from fastAutoTest.utils.singlethreadexecutor import SingleThreadExecutor
 from fastAutoTest.utils.vmhook import VMShutDownHandler, UncaughtExceptionHandler
 
-reload(sys)
-sys.setdefaultencoding('utf8')
+try:
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+except NameError:
+    pass
+
 __all__ = {
     "WxDriver"
 }
