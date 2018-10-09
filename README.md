@@ -95,7 +95,7 @@ FAutoTest 专业服务于微信 H5/小程序的UI自动化测试，提升测试�
 * 安装自身框架
 
   ```
-  pip intsall dist/fastAutoTest-xxx.whl
+  pip install dist/fastAutoTest-xxx.whl(whl文件请在dist目录下手动下载)
   ```
 
 * 打开微信Debug模式，安装 TBS 内核
