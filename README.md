@@ -86,7 +86,7 @@ FAutoTest 专业服务于微信 H5/小程序的UI自动化测试，提升测试�
 | bidict           | 0.17.0 | https://pypi.org/project/bidict/#files           |
 | websocket-client | 0.44.0 | https://pypi.org/project/websocket-client/#files |
 
-* 使用`pip`安装框架所需的第三方库 `uiautomator`、`websocket-client`、`lxml`、`bidict`、`ADBkeyBoard`，如安装`lxml`、`bidict`、`websocket-client`可用`pip`形式安装，如安装`lxml`，
+* 使用`pip`安装框架所需的第三方库 `uiautomator`、`websocket-client`、`lxml`、`bidict`，如安装`lxml`、`bidict`、`websocket-client`可用`pip`形式安装，如安装`lxml`，
 
   ```
   pip install lxml
