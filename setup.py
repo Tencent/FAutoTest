@@ -9,7 +9,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 from setuptools import setup, find_packages
 
 NAME = "fastAutoTest"
-VERSION = "2.2.2"
+VERSION = "2.2.3"
 AUTHOR = "jaggergan,fitchzheng"
 PACKAGES = find_packages()
 CLASSIFIERS = [
