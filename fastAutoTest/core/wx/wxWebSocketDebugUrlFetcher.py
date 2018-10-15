@@ -278,12 +278,12 @@ class WxWebSocketDebugUrlFetcher(object):
                 if result.get('result').get('result').get('type') == u'string':
                     url = result.get('result').get('result').get('value')
                     break
-            if h5Url[0] != url:
+            if url not in h5Url[0]:
                 raise AttributeError()
             else:
-                self.pageUrlDict.update({1: responseWesocketUrlDict.get(h5Url[0])})
-                self.pageUrlDict.update({2: responseWesocketUrlDict.get(serviceUrlList[0])})
-                self.pageUrlDict.update({3: responseWesocketUrlDict.get(serviceUrlList[1])})
+                self.pageUrlDict.forceupdate({1: responseWesocketUrlDict.get(h5Url[0])})
+                self.pageUrlDict.forceupdate({2: responseWesocketUrlDict.get(serviceUrlList[0])})
+                self.pageUrlDict.forceupdate({3: responseWesocketUrlDict.get(serviceUrlList[1])})
                 return responseWesocketUrlDict.get(h5Url[0])
 
     def _getPageFeature(self, url):

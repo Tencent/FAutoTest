@@ -15,8 +15,8 @@ if __name__ == '__main__':
     wxDriver = WxDriver()
     wxDriver.initDriver()
     # 点击全部疾病
-    wxDriver.clickElementByXpath('/html/body/div[1]/div/div[3]/p')
-    wxDriver.clickFirstElementByText('白内障')
+    wxDriver.clickElementByXpath('/html/body/div/div[1]/div[2]/div[1]/a')
+    wxDriver.clickFirstElementByText('肺癌')
     wxDriver.returnLastPage()
     wxDriver.returnLastPage()
     # 截图
