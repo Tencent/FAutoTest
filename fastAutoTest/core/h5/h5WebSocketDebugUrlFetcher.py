@@ -16,9 +16,9 @@ from fastAutoTest.utils.logger import Log
 import time
 
 _ADB_FIND_STR_CMD = {
-    "Darwin": "adb shell ps | grep com.tencent.mm:tools",  # Mac os 下查找字符串是grep
-    "Linux": "adb shell ps | grep com.tencent.mm:tools",  # Mac os 下查找字符串是grep
-    "Windows": "adb shell ps | findstr com.tencent.mm:tools"  # windows 下查找字符串是findstr
+    "Darwin": "adb shell ps | grep -w com.tencent.mm:tools",  # Mac os 下查找字符串是grep
+    "Linux": "adb shell ps | grep -w com.tencent.mm:tools",  # Mac os 下查找字符串是grep
+    "Windows": "adb shell ps | findstr /e com.tencent.mm:tools"  # windows 下查找字符串是findstr
 }
 
 
