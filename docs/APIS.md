@@ -126,6 +126,14 @@
 
 
 
+* **def getElementHrefByXpath(self, xpath)**
+
+> **接口说明：** 获取目标的href内容
+>
+> **参数说明：** xpath:目标的xpath
+
+
+
 * **def getElementClassNameByXpath(self, xpath)**
 
 > **接口说明：** 获取目标的className

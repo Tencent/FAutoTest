@@ -440,6 +440,20 @@ class H5Driver(object):
         else:
             resultValue = None
         return resultValue
+    
+    def getElementHrefByXpath(self, xpath):
+        """
+        :param xpath: 目标的xpath
+        :return: 获取到的目标href内容
+        """
+        self.logger.info('xpath ---> ' + xpath)
+        if self.isElementExist(xpath):
+            getHrefCmd = self._pageOperator.getElementHrefByXpath(xpath)
+            resultValueDict = self._networkHandler.send(getHrefCmd).getResponse()[0]
+            resultValue = resultValueDict['result']['result']['value'].encode("utf-8")
+        else:
+            resultValue = None
+        return resultValue
 
     def getElementClassNameByXpath(self, xpath):
         '''

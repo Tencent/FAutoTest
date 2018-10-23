@@ -33,6 +33,7 @@ class H5CommandManager(object):
         ActionType.GET_JS_VALUE: "Runtime.evaluate",
         ActionType.GET_ELEMENT_TEXT: "Runtime.evaluate",
         ActionType.GET_ELEMENT_SRC: "Runtime.evaluate",
+        ActionType.GET_ELEMENT_HREF: "Runtime.evaluate",
         ActionType.GET_ELEMENT_CLASS_NAME: "Runtime.evaluate",
         ActionType.IS_ELEMENT_EXIST: "Runtime.evaluate",
         ActionType.NAVIGATE_PAGE: "Page.navigate",
@@ -67,6 +68,7 @@ class H5CommandManager(object):
                                     "start_scroll_y = pparent.getBoundingClientRect().top+20;",
         ActionType.GET_ELEMENT_TEXT: ";button.innerText;",
         ActionType.GET_ELEMENT_SRC: ";button.src;",
+        ActionType.GET_ELEMENT_HREF: ";button.href;",
         ActionType.GET_ELEMENT_CLASS_NAME: ";button.className;",
         ActionType.IS_ELEMENT_EXIST: ";button;",
         ActionType.GET_ELEMENT_RECT: ";left=Math.round(button.getBoundingClientRect().left);"

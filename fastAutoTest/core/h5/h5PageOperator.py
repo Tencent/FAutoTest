@@ -146,6 +146,11 @@ class H5PageOperator(object):
         return self.processor.doCommandWithElement(h5UserAPI.ByType.XPATH, h5UserAPI.ActionType.GET_ELEMENT_SRC,
                                                    **params)
 
+    def getElementHrefByXpath(self, xpath):
+        params = {"xpath": xpath}
+        return self.processor.doCommandWithElement(h5UserAPI.ByType.XPATH, h5UserAPI.ActionType.GET_ELEMENT_HREF,
+                                                   **params)
+
     def getElementClassNameByXpath(self, xpath):
         params = {"xpath": xpath}
         return self.processor.doCommandWithElement(h5UserAPI.ByType.XPATH, h5UserAPI.ActionType.GET_ELEMENT_CLASS_NAME,
