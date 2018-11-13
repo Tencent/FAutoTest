@@ -16,8 +16,18 @@ class Log(object):
     WARNING = logging.WARNING
     ERROR = logging.ERROR
     CRITICAL = logging.CRITICAL
+    _instance = None
+    
+    """
+    单例模式
+    """
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:
+            cls._instance = super(Log, cls).__new__(cls, *args, **kwargs)
+            cls._instance.init()
+        return cls._instance
 
-    def __init__(self, name='default'):
+    def init(self, name='default'):
         self.name = name
         self.logger = logging.getLogger(self.name)
         self.logger.setLevel(self.INFO)
