@@ -258,6 +258,7 @@ class WxDriver(object):
 
             self.logger.debug(SET_INPUT_METHOD.format(CHINESE_INPUT_METHOD))
             commandHelper.runCommand(SET_INPUT_METHOD.format(CHINESE_INPUT_METHOD))
+            self.clickElementByXpath(xpath)
             self.wait(WAIT_REFLESH_05_SECOND)
             self.logger.debug(INPUT_TEXT_CMD.get(osName))
             commandHelper.runCommand(INPUT_TEXT_CMD.get(osName))
