@@ -26,6 +26,7 @@ class ActionType(object):
     GET_JS_VALUE = "getJsValue"
     GET_ELEMENT_TEXT = "getElementText"
     GET_ELEMENT_SRC = "getElementSrc"
+    GET_ELEMENT_HREF = "getElementHref"
     GET_ELEMENT_CLASS_NAME = "getElementClassName"
     IS_ELEMENT_EXIST = 'isElementExist'
     NAVIGATE_PAGE = 'navigatePage'
