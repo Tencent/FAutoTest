@@ -100,10 +100,12 @@ class WxWebSocketDebugUrlFetcher(object):
                 strlist = activity.split('pid=')
                 pid = strlist[1].split("\r\n")[0]
                 break
-        # strlist = stdout.split('pid=')
-        # pid = strlist[1].split("\r\n")[0]
         webviewCmd = _ADB_GET_WEBVIEW_TOOLS_CMD[osName] % (pid)
         print "pid:", pid
+
+        if pid == 0:  # 维持原有逻辑
+            strlist = stdout.split('pid=')
+            pid = strlist[1].split("\r\n")[0]
 
         # 验证是否启动了小程序webview
         try:
