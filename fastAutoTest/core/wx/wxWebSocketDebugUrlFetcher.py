@@ -8,6 +8,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 '''
 
+import re
 import json
 import urllib2
 
@@ -85,9 +86,24 @@ class WxWebSocketDebugUrlFetcher(object):
         osName = OS.getPlatform()
         cmd = _ADB_GET_TOP_ACTIVITY_CMD[osName]
         stdout, stdError = runCommand(AdbHelper.specifyDeviceOnCmd(cmd, device))
-        strlist = stdout.split('pid=')
-        pid = strlist[1].split("\r\n")[0]
+        print "fetchWeixinToolsProcessActivity:\n", stdout
+        mmActivity = stdout.split('com.tencent.mm/')
+        pid = 0
+        for activity in mmActivity:
+            if '.plugin.appbrand.ui.AppBrandInToolsUI' in activity:
+                # 小米
+                strlist = activity.split('pid=')
+                pid = strlist[1].split("\r\n")[0]
+                break
+            elif '.plugin.appbrand.ui.AppBrandUI' in activity:
+                # VIVO
+                strlist = activity.split('pid=')
+                pid = strlist[1].split("\r\n")[0]
+                break
+        # strlist = stdout.split('pid=')
+        # pid = strlist[1].split("\r\n")[0]
         webviewCmd = _ADB_GET_WEBVIEW_TOOLS_CMD[osName] % (pid)
+        print "pid:", pid
 
         # 验证是否启动了小程序webview
         try:
