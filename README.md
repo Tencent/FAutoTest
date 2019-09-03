@@ -179,6 +179,12 @@ if __name__ == '__main__':
 3. 初始化框架，进行相关 API 调用
 4. 关闭框架，执行用例
 
+
+
+## 后期计划
+
+改造FAutoTest，兼容[QT4W](https://github.com/Tencent/QT4W)，实现FAutoTest到QTA的无缝切换。
+
 ## 交流群
 
 交流群，请扫码加入下面群，验证回复 FAutoTest 按照指引进群。
